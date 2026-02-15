@@ -21,7 +21,7 @@ const Testimonials = () => {
       name: 'Venkat Reddy',
       company: 'Political Campaign Manager',
       location: 'Telangana',
-      text: 'Excellent execution across multiple locations. AdRun's team delivered beyond expectations with their attention to detail.',
+      text: 'Excellent execution across multiple locations. AdRun team delivered beyond expectations with their attention to detail.',
       rating: 5
     }
   ];
