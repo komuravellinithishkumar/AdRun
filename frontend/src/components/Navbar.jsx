@@ -23,9 +23,9 @@ const Navbar = () => {
 
   const navLinks = [
     { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About Us' },
     { id: 'services', label: 'Services' },
     { id: 'projects', label: 'Projects' },
+    { id: 'about', label: 'About Us' },
     { id: 'treels', label: 'Treels' },
     { id: 'contact', label: 'Contact' }
   ];
@@ -59,19 +59,19 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-white hover:text-[#F59E0B] transition-colors duration-300 font-medium text-sm tracking-wide"
+                  className="text-white hover:text-[#F59E0B] transition-colors duration-300 font-medium text-sm tracking-wide whitespace-nowrap"
                 >
                   {link.label}
                 </button>
               ))}
               <button
                 onClick={() => scrollToSection('contact')}
-                className="bg-[#F59E0B] text-white px-6 py-2.5 rounded-md hover:bg-[#D97706] transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105"
+                className="bg-[#F59E0B] text-white px-6 py-2.5 rounded-md hover:bg-[#D97706] transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 whitespace-nowrap"
               >
                 Get a Quote
               </button>

@@ -22,9 +22,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <About />
       <Services />
       <Projects />
+      <About />
       <Treels />
       <WhyChooseUs />
       <Testimonials />

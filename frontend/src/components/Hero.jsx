@@ -14,7 +14,7 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1712757057495-016f69c8edbd?q=80&w=2000"
+          src="https://images.unsplash.com/photo-1769578952560-b3e794bd368e?q=80&w=2000"
           alt="Outdoor Advertising"
           className="w-full h-full object-cover"
         />
