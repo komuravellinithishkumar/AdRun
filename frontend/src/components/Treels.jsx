@@ -49,8 +49,8 @@ const Treels = () => {
             </h4>
             <p className="text-lg text-gray-300 leading-relaxed">
               Treels strengthens AdRun's outdoor presence with digital storytelling and social
-              media amplification. It operates as a partnered franchise focused on modern
-              content-driven marketing.
+              media amplification. Founded by Abhilash and Saketh in partnership with Sai Harsha Reddy and Vijay Reddy,
+              it operates as a partnered franchise focused on modern content-driven marketing.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
               While AdRun dominates the physical advertising landscape, Treels extends that power
@@ -83,22 +83,27 @@ const Treels = () => {
           <h4 className="text-2xl font-bold mb-8 text-center">
             Treels Leadership
           </h4>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                name: 'Abhilash Saketh',
-                role: 'Founder & Digital Strategist',
-                description: 'Leading digital innovation and content strategy'
+                name: 'Abhilash',
+                role: 'Co-Founder',
+                description: 'Digital innovation and creative direction'
+              },
+              {
+                name: 'Saketh',
+                role: 'Co-Founder',
+                description: 'Content strategy and brand storytelling'
               },
               {
                 name: 'Sai Harsha Reddy',
                 role: 'Co-Founder & Partner',
-                description: 'Strategic partnership and brand alignment'
+                description: 'Strategic partnerships and growth'
               },
               {
                 name: 'Vijay Reddy',
                 role: 'Co-Founder & Partner',
-                description: 'Operations and client relationships'
+                description: 'Operations and client success'
               }
             ].map((founder, index) => (
               <div key={index} className="text-center">
