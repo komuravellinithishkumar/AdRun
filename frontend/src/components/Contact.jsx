@@ -71,7 +71,7 @@ const Contact = () => {
 
                 {/* Email */}
                 <a
-                  href="mailto:gudivijayreddy@gmail.com"
+                  href="mailto:Adrunadvertisement@gmail.com"
                   className="flex items-start gap-4 group hover:bg-gray-50 p-4 rounded-lg transition-colors"
                 >
                   <div className="flex-shrink-0 w-12 h-12 bg-[#F59E0B]/10 rounded-lg flex items-center justify-center group-hover:bg-[#F59E0B] transition-colors">
@@ -80,7 +80,7 @@ const Contact = () => {
                   <div>
                     <p className="text-sm text-gray-600 mb-1">Email Us</p>
                     <p className="text-lg font-semibold text-[#0F1C3F] group-hover:text-[#F59E0B] break-all">
-                      gudivijayreddy@gmail.com
+                      Adrunadvertisement@gmail.com
                     </p>
                   </div>
                 </a>

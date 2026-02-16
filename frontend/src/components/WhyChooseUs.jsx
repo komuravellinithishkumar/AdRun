@@ -88,7 +88,7 @@ const WhyChooseUs = () => {
         <div className="mt-20 bg-gradient-to-r from-[#0F1C3F] to-[#1E3A8A] rounded-2xl p-12 text-white shadow-2xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: '15+', label: 'Years Combined Experience' },
+              { number: '2025', label: 'Established with Vision' },
               { number: '100+', label: 'Active Locations' },
               { number: '500+', label: 'Successful Campaigns' },
               { number: '98%', label: 'Client Satisfaction' }

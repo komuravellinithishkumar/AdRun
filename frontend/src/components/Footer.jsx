@@ -31,14 +31,16 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/adrun_advertising_media"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#F59E0B] transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={20} />
               </a>
               <a
-                href="https://www.instagram.com/treels.in/"
+                href="https://www.instagram.com/adrun_advertising_media"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#F59E0B] transition-colors"
@@ -47,7 +49,9 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/adrun_advertising_media"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#F59E0B] transition-colors"
                 aria-label="LinkedIn"
               >
@@ -105,10 +109,10 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-[#F59E0B] flex-shrink-0 mt-1" />
                 <div>
                   <a
-                    href="mailto:gudivijayreddy@gmail.com"
+                    href="mailto:Adrunadvertisement@gmail.com"
                     className="text-gray-300 hover:text-[#F59E0B] transition-colors break-all"
                   >
-                    gudivijayreddy@gmail.com
+                    Adrunadvertisement@gmail.com
                   </a>
                 </div>
               </li>

@@ -121,7 +121,7 @@ const Treels = () => {
         {/* CTA */}
         <div className="text-center mt-12">
           <a
-            href="https://www.instagram.com/treels.in/"
+            href="https://www.instagram.com/treels_official"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-[#E1306C] via-[#C13584] to-[#833AB4] text-white px-8 py-4 rounded-lg hover:shadow-2xl transition-all duration-300 font-semibold text-lg transform hover:scale-105"
