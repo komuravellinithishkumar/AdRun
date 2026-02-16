@@ -44,13 +44,9 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex-shrink-0 cursor-pointer" onClick={() => scrollToSection('home')}>
               <img
-                src="https://customer-assets.emergentagent.com/job_5da1d27d-5e41-4b14-9cca-a717fb1996cd/artifacts/4986ud12_ADRUN%20LOGO%20.pdf"
+                src="/adrun-logo.png"
                 alt="AdRun Logo"
                 className="h-12 w-auto object-contain"
-                onError={(e) => {
-                  e.target.style.display = 'none';
-                  e.target.nextSibling.style.display = 'block';
-                }}
               />
               <div className="hidden text-2xl font-bold">
                 <span className="text-[#1E40AF]">Ad</span>
