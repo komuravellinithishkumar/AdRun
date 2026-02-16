@@ -4,23 +4,28 @@ const Partners = () => {
   const partners = [
     {
       name: 'Siddartha Group of Schools',
-      logo: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/ezax5ppo_WhatsApp%20Image%202026-02-16%20at%2002.45.11.jpeg'
+      logo: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/ezax5ppo_WhatsApp%20Image%202026-02-16%20at%2002.45.11.jpeg',
+      type: 'image'
     },
     {
       name: 'Advita International School',
-      logo: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/eze0vgn4_WhatsApp%20Image%202026-02-16%20at%2002.45.12.jpeg'
+      logo: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/eze0vgn4_WhatsApp%20Image%202026-02-16%20at%2002.45.12.jpeg',
+      type: 'image'
     },
     {
       name: 'Ivy High',
-      logo: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/fnnle4vl_WhatsApp%20Image%202026-02-16%20at%2002.45.13.jpeg'
+      logo: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/fnnle4vl_WhatsApp%20Image%202026-02-16%20at%2002.45.13.jpeg',
+      type: 'image'
     },
     {
-      name: 'H&H Partner',
-      logo: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/b0hvv82b_H%26H%20Logo.PDF'
+      name: 'H&H',
+      logo: null,
+      type: 'placeholder'
     },
     {
-      name: 'Partner Logo',
-      logo: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/oc8dld00_lOGOOOOO.PDF'
+      name: 'Partner',
+      logo: null,
+      type: 'placeholder'
     }
   ];
 
@@ -48,35 +53,19 @@ const Partners = () => {
               className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex items-center justify-center border border-gray-100 group"
             >
               <div className="text-center w-full">
-                {partner.logo.endsWith('.PDF') || partner.logo.endsWith('.pdf') ? (
-                  <object
-                    data={partner.logo}
-                    type="application/pdf"
-                    className="w-full h-24 pointer-events-none"
-                  >
-                    <div className="w-full h-24 bg-gradient-to-br from-[#0F1C3F]/5 to-[#F59E0B]/5 rounded-lg flex items-center justify-center">
-                      <span className="text-gray-400 text-xs font-semibold text-center px-2">
-                        {partner.name}
-                      </span>
-                    </div>
-                  </object>
-                ) : (
+                {partner.type === 'image' ? (
                   <>
                     <img
                       src={partner.logo}
                       alt={partner.name}
                       className="w-full h-24 object-contain group-hover:scale-110 transition-transform duration-300"
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'flex';
-                      }}
                     />
-                    <div className="hidden w-full h-24 bg-gradient-to-br from-[#0F1C3F]/5 to-[#F59E0B]/5 rounded-lg items-center justify-center">
-                      <span className="text-gray-400 text-xs font-semibold text-center px-2">
-                        {partner.name}
-                      </span>
-                    </div>
                   </>
+                ) : (
+                  <div className="w-full h-24 bg-gradient-to-br from-[#0F1C3F]/10 to-[#F59E0B]/10 rounded-lg flex flex-col items-center justify-center border-2 border-dashed border-[#F59E0B]/30">
+                    <span className="text-[#0F1C3F] text-lg font-bold mb-1">{partner.name}</span>
+                    <span className="text-gray-500 text-xs">Logo Partner</span>
+                  </div>
                 )}
               </div>
             </div>
