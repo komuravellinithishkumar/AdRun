@@ -12,6 +12,7 @@ const Projects = () => {
     { id: 'commercial', label: 'Commercial Ads' },
     { id: 'political', label: 'Political Campaigns' },
     { id: 'digital', label: 'Digital Advertisements' },
+    { id: 'events', label: 'Event & Festival Branding' },
     { id: 'motion', label: '2D/3D Motion Posters' }
   ];
 
@@ -87,6 +88,14 @@ const Projects = () => {
       category: 'digital',
       size: 'Digital LED Display',
       location: 'High-Traffic Location, Karimnagar'
+    },
+    {
+      id: 10,
+      image: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/38x51rn7_Siddhartha%20School.png',
+      title: 'Siddhartha School - VISMAYA 2125',
+      category: 'events',
+      size: 'Event Branding Poster',
+      location: 'Siddhartha Public School, Karimnagar'
     }
   ];
 
