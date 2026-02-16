@@ -91,8 +91,16 @@ const Projects = () => {
     },
     {
       id: 10,
-      image: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/38x51rn7_Siddhartha%20School.png',
-      title: 'Siddhartha School - VISMAYA 2125',
+      image: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/ifxklmpa_Siddhartha_School_Page_1.png',
+      title: 'Siddhartha School - VISMAYA 2125 Event',
+      category: 'events',
+      size: 'Event Branding Poster',
+      location: 'Siddhartha Public School, Karimnagar'
+    },
+    {
+      id: 11,
+      image: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/s07r2x9c_Siddhartha_School_Page_16.png',
+      title: 'Siddhartha School - VISMAYA 2125 Program',
       category: 'events',
       size: 'Event Branding Poster',
       location: 'Siddhartha Public School, Karimnagar'
