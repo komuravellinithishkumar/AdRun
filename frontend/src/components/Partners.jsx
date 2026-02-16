@@ -48,20 +48,36 @@ const Partners = () => {
               className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex items-center justify-center border border-gray-100 group"
             >
               <div className="text-center w-full">
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="w-full h-24 object-contain group-hover:scale-110 transition-transform duration-300"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }}
-                />
-                <div className="hidden w-full h-24 bg-gradient-to-br from-[#0F1C3F]/5 to-[#F59E0B]/5 rounded-lg items-center justify-center">
-                  <span className="text-gray-400 text-xs font-semibold text-center px-2">
-                    {partner.name}
-                  </span>
-                </div>
+                {partner.logo.endsWith('.PDF') || partner.logo.endsWith('.pdf') ? (
+                  <object
+                    data={partner.logo}
+                    type="application/pdf"
+                    className="w-full h-24 pointer-events-none"
+                  >
+                    <div className="w-full h-24 bg-gradient-to-br from-[#0F1C3F]/5 to-[#F59E0B]/5 rounded-lg flex items-center justify-center">
+                      <span className="text-gray-400 text-xs font-semibold text-center px-2">
+                        {partner.name}
+                      </span>
+                    </div>
+                  </object>
+                ) : (
+                  <>
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="w-full h-24 object-contain group-hover:scale-110 transition-transform duration-300"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className="hidden w-full h-24 bg-gradient-to-br from-[#0F1C3F]/5 to-[#F59E0B]/5 rounded-lg items-center justify-center">
+                      <span className="text-gray-400 text-xs font-semibold text-center px-2">
+                        {partner.name}
+                      </span>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           ))}
