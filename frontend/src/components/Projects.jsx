@@ -10,6 +10,7 @@ const Projects = () => {
     { id: 'hoardings', label: 'Outdoor Hoardings' },
     { id: 'bus-shelters', label: 'Bus Shelters' },
     { id: 'commercial', label: 'Commercial Ads' },
+    { id: 'political', label: 'Political Campaigns' },
     { id: 'motion', label: '2D/3D Motion Posters' }
   ];
 
@@ -69,6 +70,14 @@ const Projects = () => {
       category: 'motion',
       size: 'Digital Format',
       location: 'Social Media Campaign'
+    },
+    {
+      id: 8,
+      video: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/4fl6o443_IMG_5077.MOV',
+      title: 'Political Campaign - Corporator Win 2026',
+      category: 'political',
+      size: 'Campaign Coverage',
+      location: '38th Division, Karimnagar Municipal Corporation'
     }
   ];
 
