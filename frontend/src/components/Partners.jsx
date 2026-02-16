@@ -9,7 +9,7 @@ const Partners = () => {
     },
     {
       name: 'Advita International School',
-      logo: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/eze0vgn4_WhatsApp%20Image%202026-02-16%20at%2002.45.12.jpeg',
+      logo: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/3owd72oj_download.png',
       type: 'image'
     },
     {

@@ -11,6 +11,7 @@ const Projects = () => {
     { id: 'bus-shelters', label: 'Bus Shelters' },
     { id: 'commercial', label: 'Commercial Ads' },
     { id: 'political', label: 'Political Campaigns' },
+    { id: 'digital', label: 'Digital Advertisements' },
     { id: 'motion', label: '2D/3D Motion Posters' }
   ];
 
@@ -78,6 +79,14 @@ const Projects = () => {
       category: 'political',
       size: 'Campaign Coverage',
       location: '38th Division, Karimnagar Municipal Corporation'
+    },
+    {
+      id: 9,
+      video: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/22kddf1r_IMG_7152.MOV',
+      title: 'LED Screen Digital Advertisement',
+      category: 'digital',
+      size: 'Digital LED Display',
+      location: 'High-Traffic Location, Karimnagar'
     }
   ];
 
