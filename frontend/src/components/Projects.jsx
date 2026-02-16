@@ -9,7 +9,8 @@ const Projects = () => {
     { id: 'all', label: 'All Projects' },
     { id: 'hoardings', label: 'Outdoor Hoardings' },
     { id: 'bus-shelters', label: 'Bus Shelters' },
-    { id: 'commercial', label: 'Commercial Ads' }
+    { id: 'commercial', label: 'Commercial Ads' },
+    { id: 'motion', label: '2D/3D Motion Posters' }
   ];
 
   const projects = [
@@ -60,6 +61,14 @@ const Projects = () => {
       category: 'commercial',
       size: 'Multiple Formats',
       location: 'Karimnagar City'
+    },
+    {
+      id: 7,
+      video: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/3ivuefv4_WhatsApp%20Video%202026-02-15%20at%2014.09.38.mp4',
+      title: '3D Product Motion Poster',
+      category: 'motion',
+      size: 'Digital Format',
+      location: 'Social Media Campaign'
     }
   ];
 
@@ -108,14 +117,29 @@ const Projects = () => {
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
               onClick={() => setLightboxImage(project)}
             >
-              {/* Image */}
+              {/* Image or Video */}
               <div className="aspect-[4/3] overflow-hidden bg-gray-200">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  loading="lazy"
-                />
+                {project.video ? (
+                  <video
+                    src={project.video}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    muted
+                    loop
+                    playsInline
+                    onMouseEnter={(e) => e.target.play()}
+                    onMouseLeave={(e) => {
+                      e.target.pause();
+                      e.target.currentTime = 0;
+                    }}
+                  />
+                ) : (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                )}
               </div>
 
               {/* Overlay */}
@@ -146,11 +170,21 @@ const Projects = () => {
               <X size={32} />
             </button>
             <div className="max-w-5xl w-full">
-              <img
-                src={lightboxImage.image}
-                alt={lightboxImage.title}
-                className="w-full h-auto rounded-lg shadow-2xl"
-              />
+              {lightboxImage.video ? (
+                <video
+                  src={lightboxImage.video}
+                  className="w-full h-auto rounded-lg shadow-2xl"
+                  controls
+                  autoPlay
+                  loop
+                />
+              ) : (
+                <img
+                  src={lightboxImage.image}
+                  alt={lightboxImage.title}
+                  className="w-full h-auto rounded-lg shadow-2xl"
+                />
+              )}
               <div className="text-center mt-6 text-white">
                 <h4 className="text-2xl font-bold mb-2">{lightboxImage.title}</h4>
                 <p className="text-[#F59E0B] font-semibold mb-1">{lightboxImage.size}</p>
