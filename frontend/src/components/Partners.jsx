@@ -19,13 +19,13 @@ const Partners = () => {
     },
     {
       name: 'H&H',
-      logo: null,
-      type: 'placeholder'
+      logo: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/v0mkv55s_H%26H%20Logo.png',
+      type: 'image'
     },
     {
-      name: 'Partner',
-      logo: null,
-      type: 'placeholder'
+      name: 'Partner Logo',
+      logo: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/mnquo964_lOGOOOOO.png',
+      type: 'image'
     }
   ];
 
