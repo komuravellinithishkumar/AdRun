@@ -117,14 +117,14 @@ const About = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
               {
-                name: 'Sai Harsha Reddy',
-                role: 'Co-Founder & Visionary',
-                description: 'Strategic leader driving regional expansion and brand partnerships across Telangana.'
-              },
-              {
                 name: 'Vijay Reddy',
                 role: 'Co-Founder & Director',
                 description: 'Operations expert ensuring excellence in campaign execution and client satisfaction.'
+              },
+              {
+                name: 'Sai Harsha Reddy',
+                role: 'Co-Founder & Visionary',
+                description: 'Strategic leader driving regional expansion and brand partnerships across Telangana.'
               },
               {
                 name: 'Rohit Reddy',

@@ -96,14 +96,14 @@ const Treels = () => {
                 description: 'Content strategy and brand storytelling'
               },
               {
-                name: 'Sai Harsha Reddy',
-                role: 'Co-Founder & Partner',
-                description: 'Strategic partnerships and growth'
-              },
-              {
                 name: 'Vijay Reddy',
                 role: 'Co-Founder & Partner',
                 description: 'Operations and client success'
+              },
+              {
+                name: 'Sai Harsha Reddy',
+                role: 'Co-Founder & Partner',
+                description: 'Strategic partnerships and growth'
               }
             ].map((founder, index) => (
               <div key={index} className="text-center">
