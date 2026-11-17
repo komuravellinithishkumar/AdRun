@@ -12,6 +12,8 @@ const Projects = () => {
     { id: 'commercial', label: 'Commercial Ads' },
     { id: 'political', label: 'Political Campaigns' },
     { id: 'digital', label: 'Digital Advertisements' },
+    { id: 'malls', label: 'Malls' },
+    { id: 'mall-videos', label: 'Mall Videos' },
     { id: 'events', label: 'Event & Festival Branding' },
     { id: 'motion', label: '2D/3D Motion Posters' }
   ];
@@ -104,6 +106,89 @@ const Projects = () => {
       category: 'events',
       size: 'Event Branding Poster',
       location: 'Siddhartha Public School, Karimnagar'
+    },
+    // Highway hoardings (Nov 16 2026 shoot)
+    {
+      id: 12,
+      image: '/media/hoardings/court-circle-20x23.jpeg',
+      title: 'Highway Hoarding - Court Circle, Karimnagar',
+      category: 'hoardings',
+      size: '20×23 ft',
+      location: 'Court Circle, Vavilalapally, Karimnagar'
+    },
+    {
+      id: 13,
+      image: '/media/hoardings/forest-office-court-25x20.jpeg',
+      title: 'Highway Hoarding - Forest Office to Court Road',
+      category: 'hoardings',
+      size: '25×20 ft',
+      location: 'Forest Office to Court, Karimnagar'
+    },
+    {
+      id: 14,
+      image: '/media/hoardings/ntr-statue.jpeg',
+      title: 'Highway Hoarding - NTR Statue',
+      category: 'hoardings',
+      size: 'Size on request',
+      location: 'NTR Statue, Karimnagar'
+    },
+    {
+      id: 15,
+      image: '/media/hoardings/nustalpur-1.jpeg',
+      title: 'Highway Hoarding - Nustalpur',
+      category: 'hoardings',
+      size: 'Size on request',
+      location: 'Nustalpur, Karimnagar'
+    },
+    {
+      id: 16,
+      image: '/media/hoardings/nustalpur-2.jpeg',
+      title: 'Highway Hoarding - Nustalpur Road',
+      category: 'hoardings',
+      size: 'Size on request',
+      location: 'Nustalpur, Karimnagar'
+    },
+    // SN Pride Mall & Multiplex (partnership PDF, Nov 2026)
+    {
+      id: 17,
+      image: '/media/malls/digital-screen.jpg',
+      title: 'Digital Advertising Screen - SN Pride Mall',
+      category: 'malls',
+      size: '₹5,000/mo · min 3 months',
+      location: 'SN Pride Mall & Multiplex, Karimnagar'
+    },
+    {
+      id: 18,
+      image: '/media/malls/lift-doors.jpg',
+      title: 'Lift Door Branding - SN Pride Mall',
+      category: 'malls',
+      size: '₹10,000/mo · min 6 months · 4 slots',
+      location: 'SN Pride Mall & Multiplex, Karimnagar'
+    },
+    {
+      id: 19,
+      image: '/media/malls/escalator.jpg',
+      title: 'Escalator Branding - SN Pride Mall',
+      category: 'malls',
+      size: '₹15,000/mo · min 6 months · 2 slots',
+      location: 'SN Pride Mall & Multiplex, Karimnagar'
+    },
+    {
+      id: 20,
+      image: '/media/malls/main-entrance.jpg',
+      title: 'Main Entrance Advertising - SN Pride Mall',
+      category: 'malls',
+      size: '₹25,000/mo · min 6 months · 1 slot',
+      location: 'SN Pride Mall & Multiplex, Karimnagar'
+    },
+    {
+      id: 22,
+      video: '/media/mall-videos/mall-lift-installation.mp4',
+      poster: '/media/mall-videos/mall-poster.jpg',
+      title: 'Lift Door Branding - Installation',
+      category: 'mall-videos',
+      size: 'Mall Video',
+      location: 'SN Pride Mall & Multiplex, Karimnagar'
     }
   ];
 
@@ -157,6 +242,8 @@ const Projects = () => {
                 {project.video ? (
                   <video
                     src={project.video}
+                    poster={project.poster}
+                    preload="metadata"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     muted
                     loop
@@ -208,6 +295,7 @@ const Projects = () => {
               {lightboxImage.video ? (
                 <video
                   src={lightboxImage.video}
+                  poster={lightboxImage.poster}
                   className="w-full h-auto rounded-lg shadow-2xl"
                   controls
                   autoPlay

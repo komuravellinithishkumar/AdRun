@@ -3,6 +3,12 @@ import React from 'react';
 const Partners = () => {
   const partners = [
     {
+      name: 'SN Pride Mall & Multiplex',
+      label: 'Mall Partner · Karimnagar',
+      badge: 'New',
+      type: 'text'
+    },
+    {
       name: 'Siddartha Group of Schools',
       logo: 'https://customer-assets.emergentagent.com/job_adrun-telangana/artifacts/ezax5ppo_WhatsApp%20Image%202026-02-16%20at%2002.45.11.jpeg',
       type: 'image'
@@ -46,7 +52,7 @@ const Partners = () => {
         </div>
 
         {/* Partners Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           {partners.map((partner, index) => (
             <div
               key={index}
@@ -62,9 +68,14 @@ const Partners = () => {
                     />
                   </>
                 ) : (
-                  <div className="w-full h-24 bg-gradient-to-br from-[#0F1C3F]/10 to-[#F59E0B]/10 rounded-lg flex flex-col items-center justify-center border-2 border-dashed border-[#F59E0B]/30">
-                    <span className="text-[#0F1C3F] text-lg font-bold mb-1">{partner.name}</span>
-                    <span className="text-gray-500 text-xs">Logo Partner</span>
+                  <div className="relative w-full h-24 bg-gradient-to-br from-[#0F1C3F]/10 to-[#F59E0B]/10 rounded-lg flex flex-col items-center justify-center border-2 border-[#F59E0B]/40 px-2">
+                    {partner.badge && (
+                      <span className="absolute -top-3 right-2 bg-[#F59E0B] text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded-full shadow">
+                        {partner.badge}
+                      </span>
+                    )}
+                    <span className="text-[#0F1C3F] text-base font-bold mb-1 leading-tight">{partner.name}</span>
+                    <span className="text-gray-500 text-xs">{partner.label || 'Logo Partner'}</span>
                   </div>
                 )}
               </div>

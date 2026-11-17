@@ -5,6 +5,7 @@ import {
   Radio,
   Printer,
   Monitor,
+  ShoppingBag,
   Sparkles,
   Calendar,
   MapPin
@@ -36,6 +37,11 @@ const Services = () => {
       icon: Monitor,
       title: 'Digital Advertisements',
       description: 'Modern LED and digital display solutions for dynamic, eye-catching campaigns.'
+    },
+    {
+      icon: ShoppingBag,
+      title: 'Mall Advertising',
+      description: 'Digital screens, lift doors, escalators and main-entrance branding at SN Pride Mall & Multiplex, Karimnagar.'
     },
     {
       icon: Sparkles,
@@ -72,7 +78,7 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}

@@ -11,6 +11,7 @@ import Testimonials from './components/Testimonials';
 import Partners from './components/Partners';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import NewLaunchPopup from './components/NewLaunchPopup';
 
 function App() {
   useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
       <Partners />
       <Contact />
       <Footer />
+      <NewLaunchPopup />
     </div>
   );
 }
